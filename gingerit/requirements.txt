@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+gingerit
+python-multipart
+psycopg2-binary
