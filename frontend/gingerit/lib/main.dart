@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: MyHomePage(),
       ),
     );
@@ -40,7 +41,6 @@ class _MyHomePageState extends State<MyHomePage> {
     final _textController = TextEditingController();
     final _resultController = TextEditingController();
     String userText = "";
-    bool isLoading = false;
 
     final data = Provider.of<AppNotifier>(context, listen: false);
 

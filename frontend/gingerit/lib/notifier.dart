@@ -8,5 +8,6 @@ class AppNotifier extends ChangeNotifier {
 
   fetchData(context, String text) async {
     appModel = await _fetchData.getData(context: context, text: text);
+    notifyListeners();
   }
 }
